@@ -61,7 +61,8 @@ header nav {
 /*c-titulos*/
 /*c-body*/
 body {
-  background-image: url(../assets/imagenes/sky.jpg); }
+  background-image: url(../assets/imagenes/sky.jpg);
+  background-size: contain; }
 
 .principal {
   display: flex;
@@ -131,5 +132,25 @@ body {
     grid-area: three; }
   .four {
     grid-area: four; } }
+
+@media screen and (min-width: 1024px) {
+  .principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-template-areas: "one two three four"; }
+  .one {
+    grid-area: one; }
+  .two {
+    grid-area: two; }
+  .three {
+    grid-area: three; }
+  .four {
+    grid-area: four; }
+  .principal .select .linkk {
+    margin: 20px auto; }
+    .principal .select .linkk a {
+      font-size: 0.8rem; } }
 
 /*t-mediaq*/
