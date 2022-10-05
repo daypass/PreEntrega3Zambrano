@@ -9,6 +9,12 @@
   src: url(../assets/fonts/MontserratAlternates-ExtraBold.ttf); }
 
 /*t-variables*/
+/*c-variables*/
+@font-face {
+  font-family: "letter-tittles";
+  src: url(../assets/fonts/MontserratAlternates-ExtraBold.ttf); }
+
+/*t-variables*/
 /*c-header*/
 header nav {
   display: flex;
@@ -64,6 +70,7 @@ body {
   background-image: url(../assets/imagenes/sky.jpg);
   background-size: contain; }
 
+/*c-body-index*/
 .principal {
   display: flex;
   flex-direction: column;
@@ -102,7 +109,7 @@ body {
           transform: rotateZ(360deg);
           transition: 2s; }
 
-/*t-body*/
+/*t-body-index*/
 /*c-footer*/
 .foot {
   width: 90%;
@@ -116,7 +123,120 @@ body {
     width: 100px; }
 
 /*t-footer*/
-/*c-mediaq*/
+/*c-variables*/
+@font-face {
+  font-family: "letter-tittles";
+  src: url(../assets/fonts/MontserratAlternates-ExtraBold.ttf); }
+
+/*t-variables*/
+/*c-header*/
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: yellow 1px solid;
+  width: 90%;
+  margin: 50px auto; }
+  header nav .navi {
+    padding: 10px;
+    margin: 10px auto;
+    border: white 1px solid; }
+    header nav .navi p {
+      color: white;
+      font-family: "letter-tittles"; }
+
+/*t-header*/
+/*c-titulos*/
+.titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 20px auto;
+  border: #00f7ff solid 1px; }
+  .titulo .tit {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 20px auto;
+    text-align: center;
+    border: white solid 1px; }
+    .titulo .tit img {
+      height: 100px; }
+    .titulo .tit h1 {
+      font-family: "letter-tittles";
+      font-size: 2rem;
+      color: white; }
+
+.animate__animated.animate__fadeOutRightBig {
+  --animate-duration: 20s;
+  --animate-delay: 3s;
+  --animation-repeat:infinite; }
+
+.animate__animated.animate__fadeOutLeftBig {
+  --animate-duration: 20s;
+  --animate-delay: 3s;
+  --animate-repeat: infinite; }
+
+/*c-titulos*/
+/*c-body*/
+body {
+  background-image: url(../assets/imagenes/sky.jpg);
+  background-size: contain; }
+
+/*c-body-index*/
+.principal {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  border: greenyellow 1px solid;
+  width: 90%; }
+  .principal .select {
+    text-align: center;
+    margin: 20px auto;
+    border: fuchsia 1px solid;
+    width: 90%; }
+    .principal .select .linkk {
+      margin: 20px auto; }
+      .principal .select .linkk a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.7rem;
+        padding: 10px auto; }
+        .principal .select .linkk a h2 {
+          text-align: center;
+          width: auto;
+          font-family: "letter-tittles";
+          background-color: #c1fb15;
+          border-radius: 50px;
+          margin: 50px; }
+        .principal .select .linkk a :hover {
+          color: #c1fb15;
+          background-color: black;
+          border: solid 0.5px #c1fb15; }
+        .principal .select .linkk a .imgg img {
+          width: 85%;
+          opacity: 0.8; }
+        .principal .select .linkk a .imgg :hover {
+          width: 95%;
+          opacity: 1;
+          transform: rotateZ(360deg);
+          transition: 2s; }
+
+/*t-body-index*/
+/*c-footer*/
+.foot {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid greenyellow; }
+  .foot .red a img {
+    width: 100px; }
+
+/*t-footer*/
 @media screen and (min-width: 768px) {
   .principal {
     display: grid;
@@ -133,6 +253,120 @@ body {
   .four {
     grid-area: four; } }
 
+/*c-variables*/
+@font-face {
+  font-family: "letter-tittles";
+  src: url(../assets/fonts/MontserratAlternates-ExtraBold.ttf); }
+
+/*t-variables*/
+/*c-header*/
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: yellow 1px solid;
+  width: 90%;
+  margin: 50px auto; }
+  header nav .navi {
+    padding: 10px;
+    margin: 10px auto;
+    border: white 1px solid; }
+    header nav .navi p {
+      color: white;
+      font-family: "letter-tittles"; }
+
+/*t-header*/
+/*c-titulos*/
+.titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 20px auto;
+  border: #00f7ff solid 1px; }
+  .titulo .tit {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 20px auto;
+    text-align: center;
+    border: white solid 1px; }
+    .titulo .tit img {
+      height: 100px; }
+    .titulo .tit h1 {
+      font-family: "letter-tittles";
+      font-size: 2rem;
+      color: white; }
+
+.animate__animated.animate__fadeOutRightBig {
+  --animate-duration: 20s;
+  --animate-delay: 3s;
+  --animation-repeat:infinite; }
+
+.animate__animated.animate__fadeOutLeftBig {
+  --animate-duration: 20s;
+  --animate-delay: 3s;
+  --animate-repeat: infinite; }
+
+/*c-titulos*/
+/*c-body*/
+body {
+  background-image: url(../assets/imagenes/sky.jpg);
+  background-size: contain; }
+
+/*c-body-index*/
+.principal {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  border: greenyellow 1px solid;
+  width: 90%; }
+  .principal .select {
+    text-align: center;
+    margin: 20px auto;
+    border: fuchsia 1px solid;
+    width: 90%; }
+    .principal .select .linkk {
+      margin: 20px auto; }
+      .principal .select .linkk a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.7rem;
+        padding: 10px auto; }
+        .principal .select .linkk a h2 {
+          text-align: center;
+          width: auto;
+          font-family: "letter-tittles";
+          background-color: #c1fb15;
+          border-radius: 50px;
+          margin: 50px; }
+        .principal .select .linkk a :hover {
+          color: #c1fb15;
+          background-color: black;
+          border: solid 0.5px #c1fb15; }
+        .principal .select .linkk a .imgg img {
+          width: 85%;
+          opacity: 0.8; }
+        .principal .select .linkk a .imgg :hover {
+          width: 95%;
+          opacity: 1;
+          transform: rotateZ(360deg);
+          transition: 2s; }
+
+/*t-body-index*/
+/*c-footer*/
+.foot {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid greenyellow; }
+  .foot .red a img {
+    width: 100px; }
+
+/*t-footer*/
 @media screen and (min-width: 1024px) {
   .principal {
     display: grid;
@@ -152,5 +386,3 @@ body {
     margin: 20px auto; }
     .principal .select .linkk a {
       font-size: 0.8rem; } }
-
-/*t-mediaq*/
