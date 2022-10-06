@@ -20,4 +20,76 @@ header{
         }
     }
 }
+.navbar{
+    .container-fluid{
+        display: grid;
+        grid-template-columns: 3fr 7fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "row collapse";
+    }
+    .row{
+        width: 90%;
+        grid-area: "row";
+        margin: 30px auto;
+            /*c-icon*/
+        .navbar-brand{
+            img{
+                width: 85%;
+            }
+        }
+            /*t-icon*/
+    }
+    .collapse{
+        grid-area: "collapse";
+        width: 100%;
+        margin: 30px auto;
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    width: 100%;
+                    & :hover{
+                        background-color: $color-border;
+                        border: none;
+                        p{
+                            color: black;
+                        }
+                        }
+                    }
+                    .icon-baby{
+                        border: 1px solid $color-letter;
+                        border-radius: 60px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        margin: 50px auto;
+                        padding: 50px auto;
+                        display: grid;
+                        grid-template-columns: 2fr 3fr;
+                        grid-template-rows: 1fr;
+                        grid-template-areas: "imgg pp";
+                        img{
+                            grid-area: "imgg";
+                            width: 98%;
+                        }
+                        p{
+                            grid-area: "pp";
+                            width: auto;
+                            font-size: medium;
+                            font-family: "letter-tittles";
+                            color: $color-letter;
+                            text-align: center;
+                            padding: 10px auto;
+                            margin: 10px auto;
+                            display: flex;
+                            align-self: center;
+                            & :hover{
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 /*t-header*/

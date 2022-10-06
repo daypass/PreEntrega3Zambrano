@@ -34,6 +34,61 @@ header nav {
       color: white;
       font-family: "letter-tittles"; }
 
+.navbar .container-fluid {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "row collapse"; }
+
+.navbar .row {
+  width: 90%;
+  grid-area: "row";
+  margin: 30px auto;
+  /*c-icon*/
+  /*t-icon*/ }
+  .navbar .row .navbar-brand img {
+    width: 85%; }
+
+.navbar .collapse {
+  grid-area: "collapse";
+  width: 100%;
+  margin: 30px auto; }
+  .navbar .collapse .navbar-nav .nav-item .nav-link {
+    width: 100%; }
+    .navbar .collapse .navbar-nav .nav-item .nav-link :hover {
+      background-color: #c1fb15;
+      border: none; }
+      .navbar .collapse .navbar-nav .nav-item .nav-link :hover p {
+        color: black; }
+  .navbar .collapse .navbar-nav .nav-item .icon-baby {
+    border: 1px solid white;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 50px auto;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "imgg pp"; }
+    .navbar .collapse .navbar-nav .nav-item .icon-baby img {
+      grid-area: "imgg";
+      width: 98%; }
+    .navbar .collapse .navbar-nav .nav-item .icon-baby p {
+      grid-area: "pp";
+      width: auto;
+      font-size: medium;
+      font-family: "letter-tittles";
+      color: white;
+      text-align: center;
+      padding: 10px auto;
+      margin: 10px auto;
+      display: flex;
+      align-self: center; }
+      .navbar .collapse .navbar-nav .nav-item .icon-baby p :hover {
+        color: black; }
+
 /*t-header*/
 /*c-titulos*/
 .titulo {
