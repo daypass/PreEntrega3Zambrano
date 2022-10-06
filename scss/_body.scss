@@ -12,10 +12,11 @@
         width: 90%;
         .linkk{
             margin: 20px auto;
+            width: 100%;
             a{
                 text-decoration: none;
                 color: black;
-                font-size: 1.7rem;
+                font-size: small;
                 padding: 10px auto;
                 h2{
                     text-align: center;
@@ -23,7 +24,7 @@
                     font-family: "letter-tittles";
                     background-color: $color-border;
                     border-radius: 50px;
-                    margin: 50px;
+                    margin: 50px auto;
                 }
                 & :hover{
                     color: $color-border;
@@ -233,16 +234,17 @@
         margin: 50px auto;
         padding: 20px auto;
         .qimgadult{
-            width: 47%;
+            width: 45%;
             margin: 50px auto;
             padding: 20px auto;
             img{
                 width: 100%;
                 border-radius: 50%;
+                margin: 50px auto;
             }
         }
         .qparr{
-            width: 47%;
+            width: 45%;
             text-align: justify;
             color: $color-border;
             font-family: "letter-parraf";
@@ -253,7 +255,7 @@
             padding: 20px auto;
             p{
                 width: 80%;
-                font-size: large;
+                font-size: small;
                 display: flex;
                 flex-direction: row;
                 justify-items: center;
@@ -361,3 +363,72 @@
 }
 
 /*t-body-padres*/
+/*c-body-contacto*/
+.mainis{
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 60px;
+    border: black 1px solid;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-letter;
+    .ccc{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        padding: 20px auto;
+        h2{
+            width: 70%;
+            color: $color-border;
+            font-family: "letter-tittles";
+            height: 25%;
+            padding: 20px auto;
+            margin: 20px auto;
+            text-align: center;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            height: 75%;
+            .lili{
+                height: 25%;
+                p{
+                    width: 70%;
+                    margin: 20px auto;
+                    font-family: "letter-parraf";
+                    color: black;
+                }
+            }
+        }
+    }
+    .imgcont{
+        width: 90%;
+        margin: 20px auto;
+        img{
+            width: 100%;
+        }
+    }
+
+}
+@media screen and (min-width:800px){
+    .mainis{
+        display: flex;
+        flex-direction: row;
+        .ccc{
+            width: 45%;
+            h2{
+                width: 70%;
+            }
+        }
+        .imgcont{
+            width: 45%;
+            margin: 20px auto;
+            img{
+                width: 100%;
+            }
+        }
+    
+    }   
+}
+/*c-body-contacto*/

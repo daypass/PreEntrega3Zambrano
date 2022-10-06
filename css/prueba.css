@@ -91,11 +91,12 @@ header nav {
     margin: 20px auto;
     width: 90%; }
     .principal .select .linkk {
-      margin: 20px auto; }
+      margin: 20px auto;
+      width: 100%; }
       .principal .select .linkk a {
         text-decoration: none;
         color: black;
-        font-size: 1.7rem;
+        font-size: small;
         padding: 10px auto; }
         .principal .select .linkk a h2 {
           text-align: center;
@@ -103,7 +104,7 @@ header nav {
           font-family: "letter-tittles";
           background-color: #c1fb15;
           border-radius: 50px;
-          margin: 50px; }
+          margin: 50px auto; }
         .principal .select .linkk a :hover {
           color: #c1fb15;
           background-color: black; }
@@ -260,14 +261,15 @@ header nav {
     margin: 50px auto;
     padding: 20px auto; }
     .quien .qadult .qimgadult {
-      width: 47%;
+      width: 45%;
       margin: 50px auto;
       padding: 20px auto; }
       .quien .qadult .qimgadult img {
         width: 100%;
-        border-radius: 50%; }
+        border-radius: 50%;
+        margin: 50px auto; }
     .quien .qadult .qparr {
-      width: 47%;
+      width: 45%;
       text-align: justify;
       color: #c1fb15;
       font-family: "letter-parraf";
@@ -278,7 +280,7 @@ header nav {
       padding: 20px auto; }
       .quien .qadult .qparr p {
         width: 80%;
-        font-size: large;
+        font-size: small;
         display: flex;
         flex-direction: row;
         justify-items: center;
@@ -355,6 +357,61 @@ header nav {
     padding: 50px auto; } }
 
 /*t-body-padres*/
+/*c-body-contacto*/
+.mainis {
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 60px;
+  border: black 1px solid;
+  display: flex;
+  flex-direction: column;
+  background-color: white; }
+  .mainis .ccc {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 20px auto; }
+    .mainis .ccc h2 {
+      width: 70%;
+      color: #c1fb15;
+      font-family: "letter-tittles";
+      height: 25%;
+      padding: 20px auto;
+      margin: 20px auto;
+      text-align: center; }
+    .mainis .ccc ul {
+      display: flex;
+      flex-direction: column;
+      height: 75%; }
+      .mainis .ccc ul .lili {
+        height: 25%; }
+        .mainis .ccc ul .lili p {
+          width: 70%;
+          margin: 20px auto;
+          font-family: "letter-parraf";
+          color: black; }
+  .mainis .imgcont {
+    width: 90%;
+    margin: 20px auto; }
+    .mainis .imgcont img {
+      width: 100%; }
+
+@media screen and (min-width: 800px) {
+  .mainis {
+    display: flex;
+    flex-direction: row; }
+    .mainis .ccc {
+      width: 45%; }
+      .mainis .ccc h2 {
+        width: 70%; }
+    .mainis .imgcont {
+      width: 45%;
+      margin: 20px auto; }
+      .mainis .imgcont img {
+        width: 100%; } }
+
+/*c-body-contacto*/
 /*c-footer*/
 .foot {
   width: 90%;
