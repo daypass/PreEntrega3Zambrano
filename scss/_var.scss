@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*c-variables*/
+@font-face {
+    font-family: "letter-tittles";
+    src: url(../assets/fonts/MontserratAlternates-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "letter-parraf";
+    src: url(../assets/fonts/Montserrat-Light.ttf);
+}
+
+$color-letter: white;
+$color-border: rgb(193, 251, 21);
+$color-bg: rgb(23, 23, 64);
+$width-icons: 80%;
+$bg-grid-kids: white;
+/*t-variables*/
+body{
+    background-image: url(../assets/imagenes/sky.jpg);
+    background-size: contain; }

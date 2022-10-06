@@ -1,0 +1,50 @@
+/*c-titulos*/
+.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 20px auto;
+    border: rgb(0, 247, 255) solid 1px;
+    .tit{
+        display: flex;
+        align-items: center;
+        width: auto;
+        margin: 20px auto;
+        text-align: center;
+        border: white solid 1px;
+        img{
+            height: 100px;
+        }
+        h1{
+            font-family: "letter-tittles";
+            font-size: 2rem;
+            color: $color-letter;
+        }
+    }
+}
+.animate__animated.animate__fadeOutRightBig {
+    --animate-duration: 20s;
+    --animate-delay: 3s;
+    --animation-repeat:infinite;
+}
+.animate__animated.animate__fadeOutLeftBig {
+    --animate-duration: 20s;
+    --animate-delay: 3s;
+    --animate-repeat: infinite;
+  }
+/*c-titulos*/
+/*c-titulos-adults*/
+.img_padres{
+    h1{
+        color: $color-letter;
+        font-size: 1rem;
+    }
+    .kidspace{
+        img{
+            border-radius: 50%;
+            width: 100px;
+        }
+    }
+}
+/*t-titulos-adults*/

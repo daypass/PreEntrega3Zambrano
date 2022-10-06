@@ -1,0 +1,240 @@
+/*c-body-index*/
+.principal{
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    border: greenyellow 1px solid;
+    width: 90%;
+    .select{
+        text-align: center;
+        margin: 20px auto;
+        border: fuchsia 1px solid;
+        width: 90%;
+        .linkk{
+            margin: 20px auto;
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 1.7rem;
+                padding: 10px auto;
+                h2{
+                    text-align: center;
+                    width: auto;
+                    font-family: "letter-tittles";
+                    background-color: $color-border;
+                    border-radius: 50px;
+                    margin: 50px;
+                }
+                & :hover{
+                    color: $color-border;
+                    background-color: black;
+                    border: solid 0.5px $color-border;
+                }
+                .imgg{
+                    img{
+                        width: 85%;
+                        opacity: 0.8;
+                    }
+                    & :hover{
+                        width: 95%;
+                        opacity: 1;
+                        transform: rotateZ(360deg);transition: 2s
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:500px){
+    .principal{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "one two"
+        "three four";
+    }
+    .one{
+        grid-area: "one";
+    }
+    .two{
+        grid-area: "two";
+    }
+    .three{
+        grid-area: "three";
+    }   
+    .four{
+        grid-area: "four";
+    }
+}
+@media screen and (min-width:800px){
+    .principal{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "one two three four";
+    }
+    .one{
+        grid-area: "one";
+    }
+    .two{
+        grid-area: "two";
+    }
+    .three{
+        grid-area: "three";
+    }   
+    .four{
+        grid-area: "four";
+    }
+    .principal{
+        h2{
+            font-size: 1.5rem;
+        }
+    }
+}
+/*t-body-index*/
+/*c-body-chicos*/
+.gridi{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    border: solid yellow 4px;
+    .leccion{
+        width: 90%;
+        border: solid 4px red;
+        display: flex;
+        flex-direction: column;
+        background-color: $bg-grid-kids;
+        text-align: center;
+        margin: 30px auto;
+        padding-top: 0px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        .link-kids{
+            margin: 0px auto;
+            width: 100%;
+            a{
+                text-decoration: none;
+                margin-top: 0px;
+                padding: 0px auto;
+                .chicos-img{
+                    img{
+                        width: 100%;
+                        padding: 0%;
+                        margin: 0%;
+                        border-top-left-radius: 40px;
+                        border-top-right-radius: 40px;
+                    }
+                    & :hover{
+                        border-bottom: solid 18px $color-border;}
+                }
+                h2 {
+                    color: black;
+                    font-family: "letter-tittles";
+                    margin: 10px auto;
+                }
+            }
+        }
+        p{
+            color: black;
+            font-family: "letter-parraf";
+            font-size: 1rem;
+            margin: 20px auto;
+        }
+    }
+}
+@media screen and (min-width:500px){
+    .gridi{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "onekid twokid"
+        "threekid fourkid";
+    }
+    .onekid{
+        grid-area: "onekid";
+    }
+    .twokid{
+        grid-area: "twokid";
+    }
+    .threekid{
+        grid-area: "threekid";
+    }   
+    .fourkid{
+        grid-area: "fourkid";
+    }
+}
+@media screen and (min-width:800px){
+    .gridi{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "onekid twokid threekid fourkid";
+    }
+    .onekid{
+        grid-area: "onekid";
+    }
+    .twokid{
+        grid-area: "twokid";
+    }
+    .threekid{
+        grid-area: "threekid";
+    }   
+    .fourkid{
+        grid-area: "fourkid";
+    }
+}
+/*t-body-chicos*/
+/*c-body-padres*/
+.mainadult{
+    @extend .gridi;
+    .adult{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        padding: 1rem auto;
+        p{
+            font-family: "letter-parraf";
+            color: rgb(28, 27, 27);
+            margin-left: 1rem;
+        margin-right: 1rem;
+            text-align: center;
+        }
+        .imgadult{
+            margin-left: 1rem;
+        margin-right: 1rem;
+            img{
+                border-radius: 50%;
+                width: 90%;
+                border: 2px solid $color-border;
+            }
+        }
+    }
+    .nina{
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin: 20% auto;
+        p{
+            width: 50%;
+            color: $color-letter;
+            font-family: "letter-parraf";
+            text-align: center;
+            font-size: 0.7rem;
+            margin: 10% auto;
+            padding: 10% auto;
+            text-align:justify;
+        }
+    }
+
+}
+/*t-body-padres*/
