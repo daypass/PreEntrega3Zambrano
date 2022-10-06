@@ -3,12 +3,12 @@
     display: flex;
     flex-direction: column;
     margin: 50px auto;
-    border: greenyellow 1px solid;
     width: 90%;
+    border: 4px solid $color-border;
+    border-radius: 60px;
     .select{
         text-align: center;
         margin: 20px auto;
-        border: fuchsia 1px solid;
         width: 90%;
         .linkk{
             margin: 20px auto;
@@ -28,12 +28,12 @@
                 & :hover{
                     color: $color-border;
                     background-color: black;
-                    border: solid 0.5px $color-border;
                 }
                 .imgg{
                     img{
                         width: 85%;
                         opacity: 0.8;
+                        border-radius: 50%;
                     }
                     & :hover{
                         width: 95%;
@@ -95,146 +95,269 @@
 }
 /*t-body-index*/
 /*c-body-chicos*/
-.gridi{
+.kkk{
+    border: 4px solid $color-border;
+    border-radius: 60px;
     width: 90%;
     margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    border: solid yellow 4px;
-    .leccion{
+    .ktit{
         width: 90%;
-        border: solid 4px red;
+        margin: 20px auto;
+        text-align: center;
+        font-size: large;
+        color: $color-border;
+        font-family: "letter-tittles";
+    }
+    .gridi{
+        width: 90%;
+        margin: 20px auto;
         display: flex;
         flex-direction: column;
-        background-color: $bg-grid-kids;
-        text-align: center;
-        margin: 30px auto;
-        padding-top: 0px;
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px;
-        .link-kids{
-            margin: 0px auto;
-            width: 100%;
-            a{
-                text-decoration: none;
-                margin-top: 0px;
-                padding: 0px auto;
-                .chicos-img{
-                    img{
-                        width: 100%;
-                        padding: 0%;
-                        margin: 0%;
-                        border-top-left-radius: 40px;
-                        border-top-right-radius: 40px;
+        justify-content: center;
+        justify-items: center;
+        .leccion{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            background-color: $bg-grid-kids;
+            text-align: center;
+            margin: 30px auto;
+            padding-top: 0px;
+            border-top-left-radius: 60px;
+            border-top-right-radius: 60px;
+            .link-kids{
+                margin: 0px auto;
+                width: 100%;
+                a{
+                    text-decoration: none;
+                    margin-top: 0px;
+                    padding: 0px auto;
+                    .chicos-img{
+                        img{
+                            width: 100%;
+                            padding: 0%;
+                            margin: 0%;
+                            border-top-left-radius: 40px;
+                            border-top-right-radius: 40px;
+                        }
+                        & :hover{
+                            border-bottom: solid 18px $color-border;}
                     }
-                    & :hover{
-                        border-bottom: solid 18px $color-border;}
-                }
-                h2 {
-                    color: black;
-                    font-family: "letter-tittles";
-                    margin: 10px auto;
+                    h3 {
+                        width: 80%;
+                        color: black;
+                        font-family: "letter-tittles";
+                        margin: 10px auto;
+                    }
                 }
             }
-        }
-        p{
-            color: black;
-            font-family: "letter-parraf";
-            font-size: 1rem;
-            margin: 20px auto;
+            p{
+                width: 80%;
+                color: black;
+                font-family: "letter-parraf";
+                font-size: 1rem;
+                margin: 20px auto;
+            }
         }
     }
 }
 @media screen and (min-width:500px){
-    .gridi{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "onekid twokid"
-        "threekid fourkid";
-    }
-    .onekid{
-        grid-area: "onekid";
-    }
-    .twokid{
-        grid-area: "twokid";
-    }
-    .threekid{
-        grid-area: "threekid";
-    }   
-    .fourkid{
-        grid-area: "fourkid";
+    .kkk{
+        .gridi{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "onekid twokid"
+            "threekid fourkid";
+        }
+        .onekid{
+            grid-area: "onekid";
+        }
+        .twokid{
+            grid-area: "twokid";
+        }
+        .threekid{
+            grid-area: "threekid";
+        }   
+        .fourkid{
+            grid-area: "fourkid";
+        }
     }
 }
 @media screen and (min-width:800px){
-    .gridi{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "onekid twokid threekid fourkid";
-    }
-    .onekid{
-        grid-area: "onekid";
-    }
-    .twokid{
-        grid-area: "twokid";
-    }
-    .threekid{
-        grid-area: "threekid";
-    }   
-    .fourkid{
-        grid-area: "fourkid";
+    .kkk{
+        .gridi{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "onekid twokid threekid fourkid";
+        }
+        .onekid{
+            grid-area: "onekid";
+        }
+        .twokid{
+            grid-area: "twokid";
+        }
+        .threekid{
+            grid-area: "threekid";
+        }   
+        .fourkid{
+            grid-area: "fourkid";
+        }
     }
 }
 /*t-body-chicos*/
 /*c-body-padres*/
-.mainadult{
-    @extend .gridi;
-    .adult{
-        display: flex;
-        flex-direction: column;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-top: 1rem;
-        padding: 1rem auto;
-        p{
-            font-family: "letter-parraf";
-            color: rgb(28, 27, 27);
-            margin-left: 1rem;
-        margin-right: 1rem;
-            text-align: center;
+.quien{
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid $color-border;
+    .hhh{
+        text-align: center;
+        h2{
+            color: $color-border;
+            font-family: "letter-tittles";
+            font-size: 3rem;
         }
-        .imgadult{
-            margin-left: 1rem;
-        margin-right: 1rem;
+    }
+    .qadult{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 50px auto;
+        padding: 20px auto;
+        .qimgadult{
+            width: 47%;
+            margin: 50px auto;
+            padding: 20px auto;
             img{
+                width: 100%;
                 border-radius: 50%;
-                width: 90%;
-                border: 2px solid $color-border;
+            }
+        }
+        .qparr{
+            width: 47%;
+            text-align: justify;
+            color: $color-border;
+            font-family: "letter-parraf";
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 50px auto;
+            padding: 20px auto;
+            p{
+                width: 80%;
+                font-size: large;
+                display: flex;
+                flex-direction: row;
+                justify-items: center;
+                margin: 50px auto;
+                padding: 50px auto;
             }
         }
     }
-    .nina{
-        background-color: black;
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        margin: 20% auto;
-        p{
-            width: 50%;
-            color: $color-letter;
-            font-family: "letter-parraf";
+}
+.mainadult{
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 20px auto;
+    border-radius: 60px;
+    .titmadult{
+        h2{
             text-align: center;
-            font-size: 0.7rem;
-            margin: 10% auto;
-            padding: 10% auto;
-            text-align:justify;
+            color: black;
+            font-family: "letter-tittles";
+            font-size: 3rem;
+            margin: 50px auto;
+            padding: 20px auto;
         }
     }
-
+    .benef{
+        .adult{
+            width: 80%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            margin: 50px auto;
+            padding: 20px auto;
+            border: black 1px solid;
+            border-radius: 60px;
+            .imgadult{
+                width: 90%;
+                margin: 50px auto;
+                padding: 20px auto;
+                text-align: center;
+                img{
+                    width: 70%;
+                    border-radius: 50%;
+                    border: solid 6px $color-border;
+                }
+            }
+            .parr{
+                width: 90%;
+                margin: 50px auto;
+                padding: 20px auto;
+                border-top: solid black 1px;
+                p{
+                    font-family: "letter-parraf";
+                    font-size: large;
+                    text-align: center;
+                    margin: 50px auto;
+                    padding: 20px auto;
+                } 
+            } 
+        } 
+    } 
 }
+/*tablet*/
+@media screen and (min-width:800px){
+    .mainadult{
+        .benef{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "ta te"
+            "ti to";
+        }
+        .ta{
+            grid-area: "ta";
+        }
+        .te{
+            grid-area: "te";
+        }
+        .ti{
+            grid-area: "ti";
+        }
+        .to{
+            grid-area: "to";
+        }
+    }
+    .quien{
+        .qadult{
+            .qparr{
+                p{
+                    width: 80%;
+                    font-size:xx-large;
+                    display: flex;
+                    flex-direction: row;
+                    justify-items: center;
+                    margin: 50px auto;
+                    padding: 50px auto;
+                }
+            }
+        }
+    }
+    
+}
+
 /*t-body-padres*/

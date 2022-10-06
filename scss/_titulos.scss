@@ -5,14 +5,14 @@
     justify-content: space-evenly;
     width: 90%;
     margin: 20px auto;
-    border: rgb(0, 247, 255) solid 1px;
+    border: rgba(255, 255, 255, 0.332) solid 1px;
+    border-radius: 60px;
     .tit{
         display: flex;
         align-items: center;
         width: auto;
         margin: 20px auto;
         text-align: center;
-        border: white solid 1px;
         img{
             height: 100px;
         }

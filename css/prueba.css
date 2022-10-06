@@ -22,7 +22,8 @@ header nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: yellow 1px solid;
+  border: #c1fb15 1px solid;
+  border-radius: 60px;
   width: 90%;
   margin: 50px auto; }
   header nav .navi {
@@ -41,14 +42,14 @@ header nav {
   justify-content: space-evenly;
   width: 90%;
   margin: 20px auto;
-  border: #00f7ff solid 1px; }
+  border: rgba(255, 255, 255, 0.332) solid 1px;
+  border-radius: 60px; }
   .titulo .tit {
     display: flex;
     align-items: center;
     width: auto;
     margin: 20px auto;
-    text-align: center;
-    border: white solid 1px; }
+    text-align: center; }
     .titulo .tit img {
       height: 100px; }
     .titulo .tit h1 {
@@ -82,12 +83,12 @@ header nav {
   display: flex;
   flex-direction: column;
   margin: 50px auto;
-  border: greenyellow 1px solid;
-  width: 90%; }
+  width: 90%;
+  border: 4px solid #c1fb15;
+  border-radius: 60px; }
   .principal .select {
     text-align: center;
     margin: 20px auto;
-    border: fuchsia 1px solid;
     width: 90%; }
     .principal .select .linkk {
       margin: 20px auto; }
@@ -105,11 +106,11 @@ header nav {
           margin: 50px; }
         .principal .select .linkk a :hover {
           color: #c1fb15;
-          background-color: black;
-          border: solid 0.5px #c1fb15; }
+          background-color: black; }
         .principal .select .linkk a .imgg img {
           width: 85%;
-          opacity: 0.8; }
+          opacity: 0.8;
+          border-radius: 50%; }
         .principal .select .linkk a .imgg :hover {
           width: 95%;
           opacity: 1;
@@ -150,118 +151,208 @@ header nav {
 
 /*t-body-index*/
 /*c-body-chicos*/
-.gridi, .mainadult {
+.kkk {
+  border: 4px solid #c1fb15;
+  border-radius: 60px;
   width: 90%;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  border: solid yellow 4px; }
-  .gridi .leccion, .mainadult .leccion {
+  margin: 20px auto; }
+  .kkk .ktit {
     width: 90%;
-    border: solid 4px red;
+    margin: 20px auto;
+    text-align: center;
+    font-size: large;
+    color: #c1fb15;
+    font-family: "letter-tittles"; }
+  .kkk .gridi {
+    width: 90%;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
-    background-color: white;
-    text-align: center;
-    margin: 30px auto;
-    padding-top: 0px;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px; }
-    .gridi .leccion .link-kids, .mainadult .leccion .link-kids {
-      margin: 0px auto;
-      width: 100%; }
-      .gridi .leccion .link-kids a, .mainadult .leccion .link-kids a {
-        text-decoration: none;
-        margin-top: 0px;
-        padding: 0px auto; }
-        .gridi .leccion .link-kids a .chicos-img img, .mainadult .leccion .link-kids a .chicos-img img {
-          width: 100%;
-          padding: 0%;
-          margin: 0%;
-          border-top-left-radius: 40px;
-          border-top-right-radius: 40px; }
-        .gridi .leccion .link-kids a .chicos-img :hover, .mainadult .leccion .link-kids a .chicos-img :hover {
-          border-bottom: solid 18px #c1fb15; }
-        .gridi .leccion .link-kids a h2, .mainadult .leccion .link-kids a h2 {
-          color: black;
-          font-family: "letter-tittles";
-          margin: 10px auto; }
-    .gridi .leccion p, .mainadult .leccion p {
-      color: black;
-      font-family: "letter-parraf";
-      font-size: 1rem;
-      margin: 20px auto; }
+    justify-content: center;
+    justify-items: center; }
+    .kkk .gridi .leccion {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      text-align: center;
+      margin: 30px auto;
+      padding-top: 0px;
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px; }
+      .kkk .gridi .leccion .link-kids {
+        margin: 0px auto;
+        width: 100%; }
+        .kkk .gridi .leccion .link-kids a {
+          text-decoration: none;
+          margin-top: 0px;
+          padding: 0px auto; }
+          .kkk .gridi .leccion .link-kids a .chicos-img img {
+            width: 100%;
+            padding: 0%;
+            margin: 0%;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px; }
+          .kkk .gridi .leccion .link-kids a .chicos-img :hover {
+            border-bottom: solid 18px #c1fb15; }
+          .kkk .gridi .leccion .link-kids a h3 {
+            width: 80%;
+            color: black;
+            font-family: "letter-tittles";
+            margin: 10px auto; }
+      .kkk .gridi .leccion p {
+        width: 80%;
+        color: black;
+        font-family: "letter-parraf";
+        font-size: 1rem;
+        margin: 20px auto; }
 
 @media screen and (min-width: 500px) {
-  .gridi, .mainadult {
+  .kkk .gridi {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "onekid twokid" "threekid fourkid"; }
-  .onekid {
+  .kkk .onekid {
     grid-area: "onekid"; }
-  .twokid {
+  .kkk .twokid {
     grid-area: "twokid"; }
-  .threekid {
+  .kkk .threekid {
     grid-area: "threekid"; }
-  .fourkid {
+  .kkk .fourkid {
     grid-area: "fourkid"; } }
 
 @media screen and (min-width: 800px) {
-  .gridi, .mainadult {
+  .kkk .gridi {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "onekid twokid threekid fourkid"; }
-  .onekid {
+  .kkk .onekid {
     grid-area: "onekid"; }
-  .twokid {
+  .kkk .twokid {
     grid-area: "twokid"; }
-  .threekid {
+  .kkk .threekid {
     grid-area: "threekid"; }
-  .fourkid {
+  .kkk .fourkid {
     grid-area: "fourkid"; } }
 
 /*t-body-chicos*/
 /*c-body-padres*/
-.mainadult .adult {
+.quien {
+  width: 90%;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 60px;
   display: flex;
   flex-direction: column;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 1rem;
-  padding: 1rem auto; }
-  .mainadult .adult p {
-    font-family: "letter-parraf";
-    color: #1c1b1b;
-    margin-left: 1rem;
-    margin-right: 1rem;
+  border: 3px solid #c1fb15; }
+  .quien .hhh {
     text-align: center; }
-  .mainadult .adult .imgadult {
-    margin-left: 1rem;
-    margin-right: 1rem; }
-    .mainadult .adult .imgadult img {
-      border-radius: 50%;
-      width: 90%;
-      border: 2px solid #c1fb15; }
+    .quien .hhh h2 {
+      color: #c1fb15;
+      font-family: "letter-tittles";
+      font-size: 3rem; }
+  .quien .qadult {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto;
+    padding: 20px auto; }
+    .quien .qadult .qimgadult {
+      width: 47%;
+      margin: 50px auto;
+      padding: 20px auto; }
+      .quien .qadult .qimgadult img {
+        width: 100%;
+        border-radius: 50%; }
+    .quien .qadult .qparr {
+      width: 47%;
+      text-align: justify;
+      color: #c1fb15;
+      font-family: "letter-parraf";
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 50px auto;
+      padding: 20px auto; }
+      .quien .qadult .qparr p {
+        width: 80%;
+        font-size: large;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        margin: 50px auto;
+        padding: 50px auto; }
 
-.mainadult .nina {
-  background-color: black;
+.mainadult {
+  width: 90%;
+  background-color: white;
   display: flex;
-  flex-direction: row;
-  text-align: center;
-  margin: 20% auto; }
-  .mainadult .nina p {
-    width: 50%;
-    color: white;
-    font-family: "letter-parraf";
+  flex-direction: column;
+  margin: 50px auto;
+  padding: 20px auto;
+  border-radius: 60px; }
+  .mainadult .titmadult h2 {
     text-align: center;
-    font-size: 0.7rem;
-    margin: 10% auto;
-    padding: 10% auto;
-    text-align: justify; }
+    color: black;
+    font-family: "letter-tittles";
+    font-size: 3rem;
+    margin: 50px auto;
+    padding: 20px auto; }
+  .mainadult .benef .adult {
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 20px auto;
+    border: black 1px solid;
+    border-radius: 60px; }
+    .mainadult .benef .adult .imgadult {
+      width: 90%;
+      margin: 50px auto;
+      padding: 20px auto;
+      text-align: center; }
+      .mainadult .benef .adult .imgadult img {
+        width: 70%;
+        border-radius: 50%;
+        border: solid 6px #c1fb15; }
+    .mainadult .benef .adult .parr {
+      width: 90%;
+      margin: 50px auto;
+      padding: 20px auto;
+      border-top: solid black 1px; }
+      .mainadult .benef .adult .parr p {
+        font-family: "letter-parraf";
+        font-size: large;
+        text-align: center;
+        margin: 50px auto;
+        padding: 20px auto; }
+
+/*tablet*/
+@media screen and (min-width: 800px) {
+  .mainadult .benef {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "ta te" "ti to"; }
+  .mainadult .ta {
+    grid-area: "ta"; }
+  .mainadult .te {
+    grid-area: "te"; }
+  .mainadult .ti {
+    grid-area: "ti"; }
+  .mainadult .to {
+    grid-area: "to"; }
+  .quien .qadult .qparr p {
+    width: 80%;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    margin: 50px auto;
+    padding: 50px auto; } }
 
 /*t-body-padres*/
 /*c-footer*/
@@ -272,7 +363,8 @@ header nav {
   justify-content: space-evenly;
   padding: 20px;
   margin: 20px auto;
-  border: 1px solid greenyellow; }
+  border: 1px solid greenyellow;
+  border-radius: 60px; }
   .foot .red a img {
     width: 25px; }
 
