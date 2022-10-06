@@ -431,4 +431,118 @@
     
     }   
 }
-/*c-body-contacto*/
+/*t-body-contacto*/
+/*c-tareas*/
+.asig{
+    width: 90%;
+    background-color: $color-letter;
+    border-radius: 60px;
+    margin: 20px auto;
+    padding: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-areas: "h3t"
+    "video"
+    "problema";
+    .h3t{
+        height: 80%;
+        font-family: "letter-tittles";
+        text-align: center;
+        color: black;
+        margin: 20px auto;
+        grid-area: "h3t";
+    }
+    .video{
+        height: 100%;
+        grid-area: "video";
+        width: 85%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        iframe{
+            width: 95%;
+            margin: 20px auto;
+            border: 4px $color-border;
+            border-radius: 60px;
+        }
+    }
+    .problema{
+        height: 80%;
+        grid-area: "problema";
+        width: 85%;
+        border-radius: 60px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $color-border;
+        h3{
+            width: 80%;
+            text-align: center;
+            font-family: "letter-tittles";
+            color: black;
+            margin: 20px auto;
+        }
+        p{
+            width: 80%;
+            color: black;
+            text-align: center;
+            font-family: "letter-parraf";
+            margin: 20px auto;
+        }
+    }
+}
+/*t-tareas*/
+/*c-nosotros*/
+.mayor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "mensual anual";
+    .mensual{
+        grid-area: "mensual";
+        background-color: $color-letter;
+        border-radius: 60px;
+        width: 90%;
+        margin: 60px auto;
+        h2{
+            width: 80%;
+            font-family: "letter-tittles";
+            background-color: $color-border;
+            color: black;
+            text-align: center;
+        }
+        p{
+            width: 80%;
+            font-family: "letter-parraf";
+            color: black;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+    }
+    .anual{
+        grid-area: "anual";
+        background-color: $color-letter;
+        border-radius: 60px;
+        width: 90%;
+        margin: 60px auto;
+        h2{
+            width: 80%;
+            font-family: "letter-tittles";
+            background-color: $color-border;
+            color: black;
+            text-align: center;
+        }
+        p{
+            width: 80%;
+            font-family: "letter-parraf";
+            color: black;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+    }
+}
+/*t-nosotros*/
